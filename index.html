@@ -102,9 +102,7 @@
             filter: brightness(1.1);
         }
         .navbar-brand span {
-            background: linear-gradient(135deg, #fff 30%, var(--purple-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
         }
         .nav-link {
             font-family: 'Outfit', sans-serif;
@@ -209,8 +207,7 @@
             color: var(--purple-light);
             margin-bottom: 28px;
             backdrop-filter: blur(10px);
-            animation: fadeInDown 0.8s ease forwards;
-            opacity: 0;
+            animation: fadeInDown 0.8s ease;
         }
         .hero-title {
             font-family: 'Cinzel', serif;
@@ -218,12 +215,8 @@
             font-weight: 900;
             line-height: 1.15;
             margin-bottom: 24px;
-            background: linear-gradient(135deg, #ffffff 0%, var(--purple-light) 50%, var(--gold-light) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInUp 0.8s ease 0.2s forwards;
-            opacity: 0;
+            color: white;
+            animation: fadeInUp 0.8s ease 0.2s;
         }
         .hero-subtitle {
             font-size: 1.1rem;
@@ -232,14 +225,12 @@
             max-width: 580px;
             margin: 0 auto 40px;
             line-height: 1.7;
-            animation: fadeInUp 0.8s ease 0.4s forwards;
-            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.4s;
         }
         .hero-buttons {
             display: flex; gap: 16px;
             justify-content: center; flex-wrap: wrap;
-            animation: fadeInUp 0.8s ease 0.6s forwards;
-            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.6s;
         }
         .btn-primary-glow {
             background: linear-gradient(135deg, var(--purple-mid), var(--purple-bright));
@@ -297,7 +288,7 @@
             display: flex; flex-direction: column; align-items: center; gap: 8px;
             color: var(--text-muted); font-size: 0.75rem; letter-spacing: 0.15em;
             text-transform: uppercase;
-            animation: fadeIn 1s 1s forwards; opacity: 0;
+            animation: fadeIn 1s 1s;
         }
         .scroll-line {
             width: 1px; height: 50px;
@@ -331,10 +322,7 @@
             font-family: 'Cinzel', serif;
             font-size: clamp(1.6rem, 3vw, 2.4rem);
             font-weight: 700;
-            background: linear-gradient(135deg, #ffffff, var(--purple-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: white;
             margin-bottom: 16px;
         }
         .section-divider {
@@ -365,9 +353,7 @@
             font-family: 'Cinzel', serif;
             font-size: 2.8rem;
             font-weight: 900;
-            background: linear-gradient(135deg, var(--purple-light), var(--gold-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
             line-height: 1;
             margin-bottom: 8px;
         }
@@ -542,4 +528,31 @@
         }
         .jurusan-card-img-wrap {
             overflow: hidden;
-          
+            position: relative;
+        }
+        .jurusan-card-img-wrap::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(13,10,26,0.8) 0%, transparent 60%);
+        }
+        .jurusan-card-body {
+            padding: 24px;
+        }
+        .jurusan-card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--purple-light);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .jurusan-card-text {
+            color: var(--text-muted);
+            font-size: 0.83rem;
+            line-height: 1.7;
+        }
+        .jurusan-card-text strong { color: var(--text-primary); }
+
+        /* ─── GALERI ─── */
+        .galeri-section {
+            background: linear-gradie
